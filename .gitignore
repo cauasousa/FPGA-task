@@ -1,0 +1,5 @@
+# Ignorar todos os arquivos ZIP
+*.zip
+
+# Ignorar especificamente o arquivo subir_commit.txt
+subir_commit.txt
