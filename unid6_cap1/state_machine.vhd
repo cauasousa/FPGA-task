@@ -20,9 +20,9 @@ architecture rtl of state_machine is
 
   type state_type is (FECHADA, ABRINDO, ABERTA, FECHANDO);
   signal state, next_state : state_type;
-  constant T_ABERTA_MAX : integer := 5000000;  -- tempo de porta aberta
-  signal timer_cnt : integer := 0;
-
+  constant T_ABERTA_MAX : integer := 6;  -- contador maior
+  signal timer_cnt : integer range 0 to 6 := 0;
+  
 begin
     process(clk, rst_n)
     begin
@@ -32,16 +32,16 @@ begin
       elsif rising_edge(clk) then
         state <= next_state;
 
-        -- temporizador reinicia quando entra em ABERTA
+        -- temporizador de 4 bits para estado ABERTA
         if state = ABERTA then
-        -- Durante ABERTA, se sensor=1, reinicia temporizador T_ABERTA
+        -- Durante ABERTA, se sensor=1, reinicia temporizador
           if sensor = '1' then
             timer_cnt <= 0;  -- reinicia enquanto há presença
           elsif timer_cnt < T_ABERTA_MAX then
             timer_cnt <= timer_cnt + 1;
           end if;
         else
-          timer_cnt <= 0;
+          timer_cnt <= timer_cnt + 1;  
         end if;
       end if;
 
