@@ -1,0 +1,270 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-45F -t CABGA381 -s 6 -oc Commercial
+     atividade_proj_impl1.ngd -o atividade_proj_impl1_map.ncd -pr
+     atividade_proj_impl1.prf -mp atividade_proj_impl1.mrp -lpf C:/Users/CauaS/p
+     rogramacao/EmbarTech/residencia_04_2025/modulo_II/Atividades_feitas/ativ_un
+     id_7_cap2/FPGA-CODIG/Projeto/impl1/atividade_proj_impl1_synplify.lpf -lpf C
+     :/Users/CauaS/programacao/EmbarTech/residencia_04_2025/modulo_II/Atividades
+     _feitas/ativ_unid_7_cap2/FPGA-CODIG/Arquivos/ativ.lpf -gui 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-45FCABGA381
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  10/11/25  18:25:51
+
+Design Summary
+--------------
+
+   Number of registers:    174 out of 44457 (0%)
+      PFU registers:          172 out of 43848 (0%)
+      PIO registers:            2 out of   609 (0%)
+   Number of SLICEs:       147 out of 21924 (1%)
+      SLICEs as Logic/ROM:    147 out of 21924 (1%)
+      SLICEs as RAM:            0 out of 16443 (0%)
+      SLICEs as Carry:         90 out of 21924 (0%)
+   Number of LUT4s:        253 out of 43848 (1%)
+      Number used as logic LUTs:         73
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      180
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 out of 203 (6%)
+   Number of block RAMs:  0 out of 108 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 4 (0%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  10/11/25  18:25:51
+
+Design Summary (cont)
+---------------------
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 144 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 72 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 144 (0 %)
+   Number of clocks:  1
+     Net clk_c: 118 loads, 118 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  3
+     Net db_cnt_rs10: 1 loads, 1 LSLICEs
+     Net db_cnt_sp10: 1 loads, 1 LSLICEs
+     Net db_cnt_st9: 1 loads, 1 LSLICEs
+   Number of LSRs:  12
+     Net st_7_d: 18 loads, 18 LSLICEs
+     Net N_42_1_i: 9 loads, 9 LSLICEs
+     Net N_68_1_i: 11 loads, 11 LSLICEs
+     Net N_96_1_i: 5 loads, 5 LSLICEs
+     Net N_114_1_i: 5 loads, 5 LSLICEs
+     Net N_132_1_i: 5 loads, 5 LSLICEs
+     Net div_o56: 6 loads, 6 LSLICEs
+     Net leden_s1: 8 loads, 8 LSLICEs
+     Net N_17_1_i: 9 loads, 9 LSLICEs
+     Net db_cnt_st8_i: 6 loads, 6 LSLICEs
+     Net db_cnt_sp9_i: 6 loads, 6 LSLICEs
+     Net db_cnt_rs9_i: 6 loads, 6 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net st_7_d: 19 loads
+     Net N_68_1_i: 11 loads
+     Net leden_s1: 9 loads
+     Net N_17_1_i: 9 loads
+     Net N_42_1_i: 9 loads
+     Net test_s1: 9 loads
+     Net div_o56: 7 loads
+     Net O1_c: 7 loads
+     Net O2_c: 7 loads
+     Net rst_state: 6 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  10/11/25  18:25:51
+
+IO (PIO) Attributes (cont)
+--------------------------
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| O5                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| O4                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| O3                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| O2                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| O1                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| I5                  | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| I4                  | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| I3                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| I2                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| I1                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Signal leden_s1_i was merged into signal leden_s1
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_33_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_33_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_57_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_57_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_9_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_9_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_81_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_81_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_21_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_21_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_69_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_69_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_45_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_45_0_S0 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_1_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_1_0_S0 undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Signal un4_div_led_s_23_0_S1 undriven or does not drive anything - clipped.
+Signal un4_div_led_s_23_0_COUT undriven or does not drive anything - clipped.
+Signal un4_div_led_cry_0_0_S1 undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  10/11/25  18:25:51
+
+Removed logic (cont)
+--------------------
+Signal un4_div_led_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_2 undriven or does not drive anything - clipped.
+Signal un1_div_o5_cry_21_0_COUT undriven or does not drive anything - clipped.
+Signal un1_div_o5_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un1_div_o5_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_3 undriven or does not drive anything - clipped.
+Signal un3_div_o3_s_23_0_S1 undriven or does not drive anything - clipped.
+Signal un3_div_o3_s_23_0_COUT undriven or does not drive anything - clipped.
+Signal un3_div_o3_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un3_div_o3_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_7 undriven or does not drive anything - clipped.
+Signal un3_tcnt_s_29_0_S1 undriven or does not drive anything - clipped.
+Signal un3_tcnt_s_29_0_COUT undriven or does not drive anything - clipped.
+Signal un3_tcnt_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un3_tcnt_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_8 undriven or does not drive anything - clipped.
+Signal un4_db_cnt_rs_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal un4_db_cnt_rs_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un4_db_cnt_rs_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_9 undriven or does not drive anything - clipped.
+Signal un4_db_cnt_sp_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal un4_db_cnt_sp_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un4_db_cnt_sp_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_10 undriven or does not drive anything - clipped.
+Signal un3_db_cnt_st_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal un3_db_cnt_st_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un3_db_cnt_st_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_11 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_39_0_S1 undriven or does not drive anything - clipped.
+Signal tcnt8_0_I_39_0_COUT undriven or does not drive anything - clipped.
+Block leden_s1_RNIBDHA2 was optimized away.
+Block VCC was optimized away.
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 156 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

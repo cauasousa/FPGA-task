@@ -1,0 +1,9 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF179 :"c:\users\cauas\programacao\embartech\residencia_04_2025\modulo_ii\atividades_feitas\ativ_unid_7_cap2\fpga-codig\arquivos\top.sv":140:10:140:33|Found 30 by 30 bit equality operator ('==') tcnt8 (in view: work.top(verilog))
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\Users\CauaS\programacao\EmbarTech\residencia_04_2025\modulo_II\Atividades_feitas\ativ_unid_7_cap2\FPGA-CODIG\Projeto\impl1\atividade_proj_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
